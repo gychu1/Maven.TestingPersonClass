@@ -95,4 +95,72 @@ public class TestPerson {
         Integer actual = person.getAge();
         Assert.assertEquals(expected, actual);
     }
+    @Test
+    public void testSetGender() {
+        // Given
+        Person person = new Person();
+        String expected = "female";
+
+        // When
+        person.setGender(expected);
+
+        // Then
+        String actual = person.getGender();
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testSetFavColor() {
+        // Given
+        Person person = new Person();
+        String expected = "blue";
+
+        // When
+        person.setFavColor(expected);
+
+        // Then
+        String actual = person.getFavColor();
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testSetRace() {
+        // Given
+        Person person = new Person();
+        String expected = "Asian";
+
+        // When
+        person.setRace(expected);
+
+        // Then
+        String actual = person.getRace();
+        Assert.assertEquals(expected, actual);
+    }
+    @Test
+    public void testDateBirth() {
+        // Given
+        Person person = new Person();
+        String expected = "01/01/1990";
+
+        // When
+        person.setDateBirth(expected);
+
+        // Then
+        String actual = person.getDateBirth();
+        Assert.assertEquals(expected, actual);
+    }
+    @Test
+    public void testSetSingle() {
+        // Given
+        Person person = new Person();
+        Boolean expected = true;
+
+        // When
+        person.setSingle(expected);
+
+        // Then
+        Boolean actual = person.getSingle();
+        Assert.assertEquals(expected, actual);
+    }
 }
+
